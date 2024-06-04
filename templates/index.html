@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pico Control with Draggable Blocks</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <button id="connect">Connect</button>
+        <button id="run" disabled>Run</button>
+    </div>
+    <div class="workspace-container">
+        <div id="workspace" class="workspace" style="width: 800px; height: 600px; border: 1px solid black;">
+            <!-- Рабочее поле -->
+        </div>
+    </div>
+    <div id="toolbox">
+        <!-- Пример блоков с увеличенным размером -->
+        <div class="toolbox-item" data-color="red" style="width: 140px; height: 100px; background-color: red; border: 1px solid black; margin: 10px;"></div>
+        <div class="toolbox-item" data-color="blue" style="width: 140px; height: 100px; background-color: blue; border: 1px solid black; margin: 10px;"></div>
+        <div class="toolbox-item" data-color="green" style="width: 140px; height: 100px; background-color: green; border: 1px solid black; margin: 10px;"></div>
+        <div class="toolbox-item" data-color="yellow" style="width: 140px; height: 100px; background-color: yellow; border: 1px solid black; margin: 10px;"></div>
+    </div>
+
+    <div id="log" style="height: 200px; overflow-y: scroll; border: 1px solid black;"></div>
+
+    <script src="/static/js/logger.js"></script>
+    <script src="/static/js/merge.js"></script>
+    <script src="static/js/drag.js"></script>
+    <script src="/static/js/code.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
